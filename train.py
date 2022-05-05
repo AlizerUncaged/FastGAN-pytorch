@@ -67,7 +67,7 @@ def train(args):
     multi_gpu = True
     dataloader_workers = 8
     current_iteration = args.start_iter
-    save_interval = 100
+    save_interval = 1000
     saved_model_folder, saved_image_folder = get_dir(args)
     
     device = torch.device("cpu")
